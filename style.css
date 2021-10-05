@@ -3,7 +3,70 @@
 * {
     margin: 0;
     padding: 0;
-    box-shadow: 0;
+    list-style: none;
+    text-decoration: none;
+}
+:root {
+    --fonte-primária :  "Baloo Da 2" , serif;
+    --fonte-secundaria :"josefin Slab",sans-serif;
+    --font-action: "mulish", serif;
+}
+.hamburguer {
+    width: 2rem;
+    height: 2rem;
+    right: 2rem;
+    top: 2rem;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.show-menu .hamburguer {
+    right: 16rem;
+}
+.line {
+    width: 100%;
+    height: .1rem;
+    background-color: #fff;
+    box-shadow: 0.1rem 0.1rem 1px #000;
+    transition: transform 1s;
+}
+.show-menu #line1 { 
+    transform: rotate(45deg) translate(.3rem, .4rem);
+}
+.show-menu #line2 {
+    opacity: 0;
+    visibility: hidden;
+}
+.show-menu #line3 { 
+    transform: rotate(-45deg) translate(.3rem, -.4rem);
+}
+.hamburguer span {
+    position: absolute;
+    left: 3rem;
+    height: 2rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a044ff;
+    color: #ffffff;
+    font-family: var(--font-action);
+    opacity: 0;
+}
+.hamburguer span::before {
+    content: "";
+    position: absolute;
+    border-right: 0.5rem solid #a044ff;
+    border-top: 0.5rem solid transparent;
+    border-left: 0.5rem solid transparent;
+    border-bottom: 0.5rem solid transparent;
+    left: -1rem;
+}
+.show-menu .hamburguer:hover span{
+    opacity: 1;
 }
 header {
     width: 100%;
@@ -40,7 +103,7 @@ header {
 .banner h1 {
     font-size: 3.5rem;
     color: #ffffff;
-    font-family: "Baloo da 2",serif;
+    font-family: var(--fonte-primária);
     font-weight: 200;
     text-shadow: .3rem .4rem 2px rgba(0, 0, 0, .4);
     line-height: 3.5rem;
@@ -49,7 +112,7 @@ header {
     animation: moverBanner 1s 0.5s forwards;
 }
 .banner p {
-    font-family: "josefin Slab",sans-serif;
+    font-family:var(--fonte-secundaria);
     color: #ffffff;
     font-size: 2rem;
     text-shadow: .2rem .2rem rgba(0, 0, 0, .4);
@@ -58,7 +121,7 @@ header {
     animation: moverBanner 1s 0.7s forwards;
 }
 .banner button{
-    font-family: "mulish", serif;
+    font-family: var(--font-action);
     letter-spacing: .1rem;
     text-transform: uppercase;
     color: #fff;
@@ -80,4 +143,58 @@ header {
         transform: translateY(0) rotateY(0);
         opacity: 1;
     }
+}
+.sidebar {
+    width: 20rem;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    transition: all 1s;
+}
+.show-menu .sidebar {
+    right: 0;
+
+}
+.menu {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.menu-item {
+  text-align: center;
+  margin-bottom: .5rem; 
+}
+.menu-link {
+    font-family: var(--font-action);
+    font-size: 2rem;
+    color: #555;
+    transition: color 1s;
+}
+.menu-link:hover {
+    color: #6a3093;
+}
+.social-media {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.social-media i {
+    background-color: #6a3093;
+    color: rgba(255, 255,255,1);
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 1s;
+}
+.social-media i:hover {
+    background-color: #a044ff;
 }
