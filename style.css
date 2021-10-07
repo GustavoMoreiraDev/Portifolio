@@ -563,3 +563,20 @@ header {
       height: 3rem;
       box-shadow: 0 0.1rem 0.6rem #00000009;
   }
+  /*parte da responsividade*/
+  
+  /*Smartphone*/
+  @media screen and (max-width:768px) {
+.hamburguer {
+    width: 2rem;
+    height: 2rem;
+    right: 3rem;
+    top: 2rem;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+    z-index: 155;
+}
+  }
