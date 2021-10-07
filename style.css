@@ -570,7 +570,7 @@ header {
     .hamburguer {
       width: 2rem;
       height: 2rem;
-      right: 8rem;
+      right: 10rem;
       top: 2rem;
       position: fixed;
       display: flex;
