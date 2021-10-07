@@ -11,17 +11,20 @@
     --fonte-secundaria :"josefin Slab",sans-serif;
     --font-action: "mulish", serif;
 }
+html{
+    scroll-behavior:smooth;
+  }
 .hamburguer {
     width: 2rem;
     height: 2rem;
     right: 2rem;
     top: 2rem;
     position: fixed;
-    z-index: 100;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
+    z-index: 155;
 }
 .show-menu .hamburguer {
     right: 16rem;
@@ -152,6 +155,7 @@ header {
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 150;
 }
 .show-menu .sidebar {
     right: 0;
@@ -518,4 +522,47 @@ header {
       padding: 1rem;
       cursor: pointer;
       grid-column: 2;
+  }
+  footer {
+      width: 100%;
+      height: 7rem;
+      background-color: #17181b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .footer-content {
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+  }
+  .footer-content p {
+    font-family: var(--fonte-secundaria);
+    color: #a7a7a7;
+    font-size: 1.2rem;
+  }
+  .social-list a{
+      margin: 0 2rem; 
+      color: #a7a7a7;
+      font-size: 1.3rem;   
+  }
+  .social-list ul{
+    display: flex;
+
+  }
+  #link-topo {
+    background: #6a3093;
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
+    background: linear-gradient(to left, #a044ff, #6a3093);
+    color: #fff;
+    border-radius: .3rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: fixed;
+      left: 2rem;
+      bottom: 2rem;
+      width: 3rem;
+      height: 3rem;
+      box-shadow: 0 0.1rem 0.6rem #00000009;
   }
