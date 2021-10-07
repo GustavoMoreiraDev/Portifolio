@@ -11,9 +11,6 @@
     --fonte-secundaria :"josefin Slab",sans-serif;
     --font-action: "mulish", serif;
 }
-html{
-    scroll-behavior:smooth;
-  }
 .hamburguer {
     width: 2rem;
     height: 2rem;
