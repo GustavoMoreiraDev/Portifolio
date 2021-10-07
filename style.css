@@ -566,6 +566,25 @@ header {
   /*parte da responsividade*/
   
   /*Smartphone*/
+  @media screen and (max-width:360px) {
+    .hamburguer {
+      width: 2rem;
+      height: 2rem;
+      right: 8rem;
+      top: 2rem;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      cursor: pointer;
+      z-index: 155;
+  }
+  }
+
+
+
+
+
   @media screen and (max-width:768px) {
 .hamburguer {
     width: 2rem;
@@ -580,18 +599,3 @@ header {
     z-index: 155;
 }
   }
-
-@media screen and (max-width:360px) {
-  .hamburguer {
-    width: 2rem;
-    height: 2rem;
-    right: 8rem;
-    top: 2rem;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    cursor: pointer;
-    z-index: 155;
-}
-}
