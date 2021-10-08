@@ -567,11 +567,9 @@ header {
   
   /*Smartphone*/
   @media screen and (max-width:360px) {
-body {
-  overflow: unset;
-}
+
     .hamburguer {
-      display: none;
+
           width: 2rem;
           height: 2rem;
           left: 22rem;
@@ -583,33 +581,13 @@ body {
           cursor: pointer;
           z-index: 155;
       }
-    .show-menu .hamburguer {
-        display: none;
-    }
     header {
-      width: 100%;
-      height: 100vh;
-      
+      width: 120%;
+      height: 100vh;     
     }
     .banner h1 {
       font-size: 3.2rem;
     }
-    .sidebar {
-      display: none;
-      width: 55%;
-      height: 120vh;
-      overflow: hidden;
-      display: none;
-    }
-    .hamburguer {
-      display: none;
-      width: 2rem;
-      height: 2rem;
-      left: 19rem;
-      top: 2rem;
-    }
-    .show-menu .hamburguer {
-      display: none;
-      right: 16rem;
-    }
-  }
+  
+}
+  
