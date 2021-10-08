@@ -567,40 +567,49 @@ header {
   
   /*Smartphone*/
   @media screen and (max-width:360px) {
+body {
+  overflow: unset;
+}
     .hamburguer {
+      display: none;
+          width: 2rem;
+          height: 2rem;
+          left: 22rem;
+          top: 2rem;
+          position: fixed;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          cursor: pointer;
+          z-index: 155;
+      }
+    .show-menu .hamburguer {
+        display: none;
+    }
+    header {
+      width: 100%;
+      height: 100vh;
+      
+    }
+    .banner h1 {
+      font-size: 3.2rem;
+    }
+    .sidebar {
+      display: none;
+      width: 55%;
+      height: 120vh;
+      overflow: hidden;
+      display: none;
+    }
+    .hamburguer {
+      display: none;
       width: 2rem;
       height: 2rem;
       left: 19rem;
       top: 2rem;
-      position: fixed;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      cursor: pointer;
-      z-index: 155;
+    }
+    .show-menu .hamburguer {
+      display: none;
+      right: 16rem;
+    }
   }
-
-  
-.show-menu .hamburguer {
-    right: 17rem;
-}
-header {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-}
-.img-wrapper {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.8);
-  animation: zoom 25s;
-}
-.img-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit:cover;
-  opacity: 0.5;
-}
-}
