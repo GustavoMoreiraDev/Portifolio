@@ -575,7 +575,7 @@ header {
         left: 10rem;
       }
     header {
-      width: 100%;    
+      width: 120%;    
     }
     .banner {
       left: 5%;
@@ -597,32 +597,82 @@ header {
 .conhecimento-text {
   display: none;
 }
-/*.conhecimento:nth-child(1){
-  grid-column:  / ;
-  grid-row:  /  ;
-}
-.conhecimento:nth-child(2){
-  grid-column:  / ;
-  grid-row:  / ;
-}
-.conhecimento:nth-child(3){
-  grid-column:  / ;
-  grid-row:  / ;
-}
-.conhecimento:nth-child(4){
-  grid-column:  / ;
-  grid-row:  /  ;
-}
-.conhecimento:nth-child(5){
-  grid-column:  / ;
-  grid-row:  /  ;
-}
-.conhecimento:nth-child(6){
-  grid-column:  /;
-  grid-row:  /  ;
-}/*/
 .conhecimentos {
 display:inherit;
 margin: .5rem;
+}
+.sessao-orcamento{
+  width: 120%;
+}
+.orcamento-wrapper {
+  display: none;
+}
+.social-list ul {
+  display: inherit;
+  margin: .5rem;
+}
+.sessao-projetos{
+  width: 120%;
+}
+.sessao-contato {
+  width: 120%;
+}
+footer {
+  width: 120%;
+}
+}
+@media screen and (max-width:768px) {
+
+  .hamburguer {
+        left: 20rem;
+    }
+    .show-menu .hamburguer {
+      left: 10rem;
+    }
+  header {
+    width: 120%;    
+  }
+  .banner {
+    left: 5%;
+}
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+  .sessao-conhecimentos{
+    background-color: #f5f5f5;
+    width: 120%;
+    height: 100vh;
+}
+.conhecimento-header h3 {
+  font-size: 1rem;
+}
+.sessao-header h1 {
+font-size: 2rem;
+}
+.conhecimento-text {
+display: none;
+}
+.conhecimentos {
+display:inherit;
+margin: .5rem;
+}
+.sessao-orcamento{
+width: 120%;
+}
+.orcamento-wrapper {
+display: none;
+}
+.social-list ul {
+display: inherit;
+margin: .5rem;
+}
+.sessao-projetos{
+width: 120%;
+}
+.sessao-contato {
+width: 120%;
+}
+footer {
+width: 120%;
 }
 }
