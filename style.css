@@ -6,6 +6,9 @@
     list-style: none;
     text-decoration: none;
 }
+.html {
+  scroll-behavior: smooth;
+}
 :root {
     --fonte-primária :  "Baloo Da 2" , serif;
     --fonte-secundaria :"josefin Slab",sans-serif;
@@ -570,10 +573,10 @@ header {
   /*parte da responsividade*/
   
   /*Smartphone*/
- /* @media screen and (max-width:378px) {
+  @media screen and (max-width:378px) {
 
     .hamburguer {
-          left: 20rem;
+          left: 24rem;
       }
       .show-menu .hamburguer {
         left: 10rem;
