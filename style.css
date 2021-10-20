@@ -635,7 +635,9 @@ header {
 .show-menu .hamburguer {
     left: 7rem;
   }
-    
+  header { 
+    height: 50vh;
+  }
     .orcamento-wrapper {
       display: none;
     }
