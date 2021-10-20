@@ -11,6 +11,9 @@
     --fonte-secundaria :"josefin Slab",sans-serif;
     --font-action: "mulish", serif;
 }
+body {
+  background-color: #272727;
+}
 .hamburguer {
     width: 2rem;
     height: 2rem;
@@ -205,6 +208,7 @@ header {
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(6, 6rem);
   row-gap: 0.5rem;
+  background-color: #272727;
 }
 
 .conhecimento:nth-child(1) {
@@ -244,14 +248,14 @@ header {
 .sessao-header h1 {
     font-family: var(--fonte-primária);
     font-size: 3rem;
-    color: #4b4b4b;
+    color: rgb(192, 173, 173);
     border-bottom: solid 3px #6a3093;
     margin-bottom: 1.5rem;
 }
 .conhecimento-header {
     display: flex;
     align-items: center;
-    color: #4b4b4b;
+    color: rgb(192, 173, 173);
 }
 .conhecimento-header i {
     font-size: 2.5rem;
@@ -265,6 +269,7 @@ header {
 .conhecimento-text {
     font-family: var(--fonte-secundaria);
     margin-top: 1rem;
+    color: #eee;
 }
 .conhecimentos-img-wrapper {
     grid-column: 7 / 11;
@@ -280,7 +285,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 2rem;
-    background-color: rgb(221, 215, 215);
+    background-color:  #a7a7a7;
   }
   
   .card {
@@ -574,17 +579,40 @@ header {
     
     /*menu lateral*/
     .hamburguer {
-          left: 14rem;
+          left: 12rem;
+          display: none;
       }
     .show-menu .hamburguer {
-        left: 10rem;
+        left: 7rem;
+        display: none;
       }
+      .sessao-header {
+        display: none;
+      }
+    .sidebar {
+      display: none;
+    }
+    .projetos {
+      display: none;
+    }
+    .conhecimentos {
+      display: none;
+    }
+    .sessao-contato {
+      display: none;
+    }
+    .sessao-orcamento {
+      display: none;
+    }
+    .footer-content{
+      display: none;
+    }
   
     /*cabeçalho*/
 
     header {
       width: 100%;
-      height: 100vh;    
+      height: 65vh;    
     }
     .banner {
       left: 3%;
@@ -599,45 +627,9 @@ header {
       font-size: 1rem;
       margin-bottom: 2.4rem;
     }
-
-    /*segunda sessão*/
-
-    .sessao-conhecimentos{
-      background-color: #4b4b4b;
-      width: 100%;
-      height: 100vh;
-    }
-  .conhecimento-header h3 {
-    font-size: 1rem;
-    }
-  .sidebar {
-    width: 25%;
-    height: 100vh;
-    }
-  .sessao-header h1 {
-    font-family: var(--fonte-primária);
-    font-size: 2rem;
-    color: #4b4b4b;
-    border-bottom: solid 3px #6a3093;
-    margin-bottom: 1.5rem;
-    }
-  .sessao-conhecimentos{
-    background-color: #f5f5f5;
-    width: 100%;
-    height: 100vh;
-    }
-  .conhecimento-header h3 {
-    font-size: 1rem;
-    }
-  .sessao-header h1 {
-    font-size: 2rem;
-    }
-    .orcamento-wrapper{
-      display: none;
-    }
   }
   @media screen and (max-width: 768px ){
-    body {
-      background-color: #4b4b4b;
+    .orcamento-wrapper {
+      display: none;
     }
   }
