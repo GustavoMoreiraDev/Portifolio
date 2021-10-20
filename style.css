@@ -629,6 +629,13 @@ header {
     }
   }
   @media screen and (max-width: 768px ){
+    .hamburguer {
+      left: 12rem;
+  }
+.show-menu .hamburguer {
+    left: 7rem;
+  }
+    
     .orcamento-wrapper {
       display: none;
     }
