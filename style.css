@@ -285,7 +285,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 2rem;
-    background-color:  #a7a7a7;
+    background-color: rgba(192, 173, 173, 0.288);
   }
   
   .card {
