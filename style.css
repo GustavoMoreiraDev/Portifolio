@@ -630,6 +630,11 @@ header {
     }
   }
   @media screen and (max-width:425px) {
+
+  .banner h1 {
+      font-size: 2.5rem;
+  }
+  
     .sessao-header h1 {
       font-size: 1.5rem;
       margin-bottom: 1.5rem;
@@ -680,10 +685,10 @@ header {
   }
   .contato-wrapper {
     width: 100%;
-    height: 30rem;
+    height: 20rem;
   }
   .contato-right {
-    width: 30%;
+    width: 37%;
   }
   .field {
     width: 10rem;
@@ -711,19 +716,13 @@ header {
     align-items: center;
 }
 .footer-content {
+  position: absolute;
     width: 50%;
     display: flex;
 }
 .footer-content p {
-  position: absolute;
-  right: 5vmax;
-  width: 65%;
-  top: 390vh;
-  font-size: 6px;
+  display: none;
 }
-.social-list a{
-    font-size: 1rem;   
-  }
 }
   @media screen and (max-width: 768px ){
     .sessao-orcamento {
