@@ -629,17 +629,51 @@ header {
       margin-bottom: 2.4rem;
     }
   }
+  @media screen and (max-width:425px) {
+    .sessao-header h1 {
+      font-family: var(--fonte-primária);
+      font-size: 1.5rem;
+      color: rgb(192, 173, 173);
+      border-bottom: solid 3px #6a3093;
+      margin-bottom: 1.5rem;
+  }
+  .conhecimento-header i {
+      font-size: 1rem;
+  
+  }
+  .conhecimento-header h3 {
+      font-family: var (var(--fonte-secundaria));
+      font-size: 1rem;
+      padding-left: 0.5rem;
+  }
+  .conhecimento-text {
+      display: inline;
+      font-family: var(--fonte-secundaria);
+      font-size: 9px;
+      margin-top: 2rem;
+      color: #eee;
+  }
+  .conhecimentos-img-wrapper {
+      grid-column: 7 / 11;
+      grid-row: 2 / 6;
+      width: 80%;
+      height: 80%;
+    }
+  .conhecimentos-img-wrapper img {
+      object-fit: cover;
+      width: 100%;
+  }
+  }
   @media screen and (max-width: 768px ){
-    .hamburguer {
-      left: 20rem;
-  }
-.show-menu .hamburguer {
-    left: 7rem;
-  }
-  header { 
-    height: 50vh;
-  }
-    .orcamento-wrapper {
+    .sessao-orcamento {
       display: none;
     }
+    .footer-content p {
+      font-size: 0.9rem;
+    }
+    .social-list a{
+      position: relative;
+      left: 11vmax;
+      font-size: 1rem;   
+  }
   }
