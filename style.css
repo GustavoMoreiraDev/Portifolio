@@ -631,37 +631,59 @@ header {
   }
   @media screen and (max-width:425px) {
     .sessao-header h1 {
-      font-family: var(--fonte-primária);
+
       font-size: 1.5rem;
-      color: rgb(192, 173, 173);
-      border-bottom: solid 3px #6a3093;
       margin-bottom: 1.5rem;
   }
   .conhecimento-header i {
       font-size: 1rem;
-  
   }
   .conhecimento-header h3 {
-      font-family: var (var(--fonte-secundaria));
       font-size: 1rem;
       padding-left: 0.5rem;
   }
   .conhecimento-text {
-      display: inline;
-      font-family: var(--fonte-secundaria);
-      font-size: 9px;
-      margin-top: 2rem;
-      color: #eee;
+      font-size: 10px;
+      margin-top: 1rem;
   }
-  .conhecimentos-img-wrapper {
-      grid-column: 7 / 11;
-      grid-row: 2 / 6;
-      width: 80%;
-      height: 80%;
-    }
-  .conhecimentos-img-wrapper img {
-      object-fit: cover;
-      width: 100%;
+  .card {
+    width: 9rem;
+    height: 12.5rem;
+    position: relative;
+  }
+  .card-info {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    padding: 1rem;
+    text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.6);
+    transition: all 0.3s;
+  }
+  
+  .card-info h2 {
+    font-size: 1rem;
+  }
+  
+  .card-info h3 {
+    font-size: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .card-info p {
+    font-size: 12px;
+    margin-bottom: 0.5rem;
+  } 
+  .card-info button {
+    font-size: 8px;
+    width: 4rem;
+    height: 1.2rem;
+  }
+  
+  .card:hover .card-info {
+    bottom: 1rem;
+    opacity: 1;
+    visibility: visible;
   }
   }
   @media screen and (max-width: 768px ){
