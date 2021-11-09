@@ -576,58 +576,128 @@ header {
   /*parte da responsividade*/
   
   /*Smartphone*/
-  @media screen and (max-width:378px) {
-    
-    /*menu lateral*/
-    .hamburguer {
-          left: 12rem;
-          display: none;
-      }
-    .show-menu .hamburguer {
-        left: 7rem;
-        display: none;
-      }
-      .sessao-header {
-        display: none;
-      }
-    .sidebar {
-      display: none;
-    }
-    .projetos {
-      display: none;
-    }
-    .conhecimentos {
-      display: none;
-    }
-    .sessao-contato {
-      display: none;
-    }
-    .sessao-orcamento {
-      display: none;
-    }
-    .footer-content{
-      display: none;
-    }
-  
-    /*cabeçalho*/
+  @media screen and (max-width:320px) {
 
-    header {
+ .projetos .card-info h2 {
+      font-size: 15px;
+    }
+  .projetos .card-info h3 {
+      font-size: 8px;
+      margin-bottom: 1rem;
+    }
+   .projetos .card-info p {
+      font-size: 10px;
+      margin-bottom: 5px;
+    } 
+    .card-info button {
+      font-size: 8px;
+      width: 4rem;
+      height: 1.2rem;
+    }
+    .card:hover .card-info {
+      bottom: 1rem;
+    }
+    .contato-wrapper {
       width: 100%;
-      height: 65vh;    
+      height: 20rem;
     }
-    .banner {
-      left: 3%;
-      top: 25%;
+    .contato-right {
+      width: 37%;
     }
-    .banner h1 {
-      font-size: .9rem;
-      text-align: left;
-      margin-bottom: 0.2rem;
+    .field {
+      width: 10rem;
+      font-size: 1.5rem;
+      border-bottom: 0.5px solid #636363;
     }
-    .banner p {
+    .input-group textarea {
+      padding-top: 1rem;
+      max-width: 15rem;
+      max-height: 3rem;
+    } 
+    .field:focus {
+      border-bottom: 1px solid;
+    }
+    .contato-right .btn-submit {
       font-size: 1rem;
-      margin-bottom: 2.4rem;
+      width: 70%;
     }
+    footer {
+      width: 100%;
+      height: 6rem;
+  }
+  .footer-content {
+    position: absolute;
+    width: 50%;
+    display: flex;
+  }
+  .footer-content p {
+    display: none;
+  }
+  .social-list a{
+    position: relative;
+    left: 15px;
+    font-size: 8px;
+    margin: 15px;    
+}
+    }
+  @media screen and (max-width:378px) {
+
+  .card-info h2 {
+    font-size: 5px;
+  }
+  .card-info h3 {
+    font-size: 5px;
+    margin-bottom: 1rem;
+  }
+  .card-info p {
+    font-size: 2px;
+    margin-bottom: 5px;
+  } 
+  .card-info button {
+    font-size: 8px;
+    width: 4rem;
+    height: 1.2rem;
+  }
+  .card:hover .card-info {
+    bottom: 1rem;
+  }
+  .contato-wrapper {
+    width: 100%;
+    height: 20rem;
+  }
+  .contato-right {
+    width: 37%;
+  }
+  .field {
+    width: 10rem;
+    font-size: 1.5rem;
+    border-bottom: 0.5px solid #636363;
+  }
+  .input-group textarea {
+    padding-top: 1rem;
+    max-width: 15rem;
+    max-height: 3rem;
+  } 
+  .field:focus {
+    border-bottom: 1px solid;
+  }
+  .btn-submit {
+    font-size: 1rem;
+    width: 60%;
+  }
+  footer {
+    width: 100%;
+    height: 6rem;
+}
+.footer-content {
+  position: absolute;
+    width: 50%;
+    display: flex;
+}
+.footer-content p {
+  display: none;
+}
+
   }
   @media screen and (max-width:425px) {
 
