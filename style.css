@@ -575,6 +575,9 @@ header {
   }
   /*parte da responsividade*/
   @media screen and (max-width: 768px ){
+    .card {
+      width: 15rem;
+    }
     .sessao-orcamento {
       display: none;
     }
@@ -587,7 +590,7 @@ header {
       font-size: 1rem;   
   }
 }
-           /*Smartphone*/
+          /*Smartphone*/
   @media screen and (max-width:425px) {
 
     .banner h1 {
@@ -610,7 +613,7 @@ header {
         margin-top: 1rem;
     }
     .card {
-      width: 9rem;
+      width: 8rem;
       height: 12.5rem;
       position: relative;
     }
@@ -684,16 +687,90 @@ header {
   }
 }
   @media screen and (max-width:378px) {
-
+    .sessao-contato {
+      max-width: 100%;
+      height: 75vh;
+    }
+    .card {
+      max-width: 7rem;
+      height: 10.5rem;
+    }
     .card-info h2 {
-      font-size: 5px;
+      font-size: 10px;
     }
     .card-info h3 {
-      font-size: 5px;
+      font-size: 8px;
       margin-bottom: 1rem;
     }
     .card-info p {
-      font-size: 2px;
+      font-size: 10px;
+      margin-bottom: 5px;
+    } 
+    .card-info button {
+      font-size: 8px;
+      max-width: 4rem;
+      height: 1.2rem;
+    }
+    .card:hover .card-info {
+      bottom: 1rem;
+    }
+    .contato-wrapper {
+      max-width: 100%;
+      height: 20rem;
+    }
+    .contato-right {
+      width: 37%;
+    }
+    .field {
+      width: 10rem;
+      font-size: 1.5rem;
+      border-bottom: 0.5px solid #636363;
+    }
+    .input-group textarea {
+      padding-top: 1rem;
+      max-width: 15rem;
+      max-height: 3rem;
+    } 
+    .field:focus {
+      border-bottom: 1px solid;
+    }
+    .btn-submit {
+      font-size: 1rem;
+      width: 60%;
+    }
+    footer {
+      max-width: 100%;
+      height: 6rem;
+  }
+  .footer-content {
+    position: absolute;
+      width: 80%;
+      display: flex;
+  }
+  .footer-content p {
+    display: none;
+  }
+  
+}
+  @media screen and (max-width:320px) {
+
+    .sessao-contato {
+      width: 100%;
+      height: 75vh;
+    }
+    .card {
+      max-width: 6rem;
+      height: 10.5rem;
+    }
+    .card-info h2 {
+      font-size: 10px;
+    }
+    .card-info h3 {
+      font-size: 8px;
+      margin-bottom: 1rem;
+    }
+    .card-info p {
+      font-size: 10px;
       margin-bottom: 5px;
     } 
     .card-info button {
@@ -726,47 +803,18 @@ header {
     }
     .btn-submit {
       font-size: 1rem;
-      width: 60%;
+      width: 70%;
     }
     footer {
       width: 100%;
       height: 6rem;
   }
   .footer-content {
-    position: absolute;
-      width: 50%;
+      position: absolute;
+      width: 90%;
       display: flex;
   }
   .footer-content p {
-    display: none;
+      display: none;
   }
-  
-}
-  @media screen and (max-width:320px) {
-
- .projetos .card-info h2 {
-      font-size: 15px;
-    }
-  .projetos .card-info h3 {
-      font-size: 8px;
-      margin-bottom: 1rem;
-    }
-   .projetos .card-info p {
-      font-size: 10px;
-      margin-bottom: 5px;
-    } 
-    .contato-right .btn-submit {
-      width: 70%;
-    }
-  .footer-content {
-    position: absolute;
-    width: 50%;
-    display: flex;
-  }
-  .social-list a{
-    position: relative;
-    left: 15px;
-    font-size: 8px;
-    margin: 15px;    
-}
 }
