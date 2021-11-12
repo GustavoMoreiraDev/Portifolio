@@ -26,5 +26,3 @@ function atualizarPreco(){
    
     document.querySelector("#preco").innerHTML = `R$ ${preco.toFixed(2)}`
 }
-
-var instance = OverlayScrollbars(document.getElementById('body'), { /* your options */ }); 
