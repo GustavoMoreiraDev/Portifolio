@@ -436,6 +436,12 @@ header {
     max-width: 25rem;
     max-height: 3rem;
   }
+  input:not(:placeholder-shown) + label {
+    transform: translateY(-25px);
+}
+input::placeholder {
+    color: transparent;
+}
   
   .field-label {
     position: absolute;
