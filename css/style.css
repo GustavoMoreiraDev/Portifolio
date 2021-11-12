@@ -389,7 +389,7 @@ header {
   .contato-left {
     width: 35%;
     background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
-      url(imagens/contato.jpg);
+      url(../imagens/contato.jpg);
     background-size: cover;
     border-radius: .5rem;
   }
@@ -411,6 +411,7 @@ header {
   }
   
   .sessao-contato form {
+    color: black;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -512,6 +513,7 @@ input::placeholder {
     border-radius: 10px;
   }
   .sessao-orcamento form {
+    color: black;
     margin: 4rem;
     display: grid;
     grid-template-columns: auto 1fr;
