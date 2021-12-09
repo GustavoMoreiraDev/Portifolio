@@ -12,7 +12,14 @@
     --fonte-secundaria :"josefin Slab",sans-serif;
     --font-action: "mulish", serif;
 }
-
+.custom-class, .os-scrollbar, .os-scrollbar-track {
+  border: 0;
+  color: #27272709 !important;
+  }
+  .custom-class .os-scrollbar .os-scrollbar-track .os-scrollbar-handle {
+  border-radius: 0;
+  background-color: #a044ff !important;
+  }
 body {
   background-color: #272727;
 }
